@@ -18,8 +18,18 @@ const dahlia = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Andreas Antonsson - Interaction Designer & Creative Developer",
-  description: "Portfolio of Andreas Antonsson",
+  title: "Kalshi Called It | 2025 Prediction Accuracy",
+  description: "Explore how Kalshi's prediction markets accurately forecasted hundreds of events in 2025. See the markets that called it before it happened.",
+  openGraph: {
+    title: "Kalshi Called It | 2025 Prediction Accuracy",
+    description: "Before it happened, the market knew. Explore 742 predictions Kalshi got right in 2025.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kalshi Called It | 2025 Prediction Accuracy",
+    description: "Before it happened, the market knew. Explore 742 predictions Kalshi got right in 2025.",
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${dahlia.variable}`}>
-      <body className="bg-black text-white antialiased selection:bg-white selection:text-black overflow-x-hidden">
+      <body className="bg-black text-white antialiased selection:bg-[#00D991] selection:text-black overflow-x-hidden">
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
