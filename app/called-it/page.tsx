@@ -354,7 +354,6 @@ function CarouselCard({
       const imageAspect = img.width / img.height
       const planeAspect = 1.618 // golden ratio (width / height)
       
-      // eslint-disable-next-line react-hooks/immutability
       texture.matrixAutoUpdate = false
       
       if (imageAspect > planeAspect) {
